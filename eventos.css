@@ -68,7 +68,31 @@ body{
     color: #ffbc0e;
     transform: scale(1.1);
 }
-.div .p{
-    text-align: justify;
-    justify-content: space-between;
+.div-container{
+    display: flex;
+    justify-content: center;
+}
+.div-container .p{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    display: flex;
+}
+.div-container .h1{
+    font-size: 50px;
+
+}
+.div-container .p  .img:foto1{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    transition: all   0.3s;
+
+}
+.div-container .p  .img:foto2{
+    height: 0px;
+    width: 10px;
+    transition: all   0.3s;
+
 }

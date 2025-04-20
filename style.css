@@ -5,10 +5,10 @@
     margin:0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    font-size: 13px;
+    font-size: 20px;
 }
 body{
-    background-color: #fff59d;
+    background-color: #fafad5
 }
 .header{
     background-color: #0f5a7a;
@@ -57,7 +57,7 @@ body{
     font-weight: 700;
     color: #fb3039;
     padding: 9px  25px;
-    background: #fff59d;
+    background: #fafad5;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -68,31 +68,28 @@ body{
     color: #ffbc0e;
     transform: scale(1.1);
 }
-.body  .img{
+.header .instagram{
+    cursor: pointer;
+
+}
+.header .instagram img{
     height: 90px;
     width: auto;
-    
+    transition: all   0.3s;
 }
 
-.div-banner img{
+.header .inst img:hover{
+    transform: scale(1.2);
+}
+
+ .div-banner .img{
+   
     height: 250px;
     width: 80%;
     padding: 0 10%;
    
 }
-h1{
-    margin-left: 30px;
-    font-size: 40px;
-    text-align: left;
-
-}
-p{
-    margin-left: 10px;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 30px;
-    text-align: justify;
-}
+ 
 .sobre img{
     border-radius: 10px;
     margin-left: 10px;
@@ -133,11 +130,25 @@ p{
     cursor: pointer;
     transition: all  0.3s   ease 0s;
 }
-.galeria img{
+.div .galeria img{
     border-radius: 10px;
-    margin-left: 10px;
-    float: right;
+    margin-left: 400px;
+    margin-right: 10px;
+    float: center;
     width: 350px;
     height: 400px;
 
+}
+.div .galeria .p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.footer>{
+    background-color: #0f5a7a;
+    
+    
+}
+.footer  .h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
 }
