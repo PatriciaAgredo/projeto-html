@@ -5,7 +5,8 @@
     margin:0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    font-size: 20px;
+    font-size: 40px;
+    
 }
 body{
     background-color: #fafad5
@@ -67,4 +68,7 @@ body{
     background-color: #fff59d;
     color: #ffbc0e;
     transform: scale(1.1);
+}
+.h1{
+    font-size: 40px;
 }

@@ -68,31 +68,38 @@ body{
     color: #ffbc0e;
     transform: scale(1.1);
 }
-.div-container{
+
+
+.carousel-item img {
+    height: 500px; /* Defina a altura desejada em pixels (ajuste conforme necessário) */
+    display:flex;
+    justify-content: center; /* Remove espaços extras abaixo da imagem */
+    width: 100%; /* Garante que a largura se ajuste ao contêiner */
+    object-fit: cover; /* Recorta a imagem para preencher o contêiner, mantendo a proporção */
+}
+
+
+.carousel-container {
+    /* Estilos para o container do carrossel e legendas, se necessário */
+    margin-bottom: 20px; /* Espaço entre o carrossel e outros elementos */
+}
+
+.carousel-legend-wrapper {
     display: flex;
-    justify-content: center;
+    gap: 20px; /* Espaço entre o carrossel e a legenda */
+    align-items: center; /* Alinhar verticalmente, se desejar */
 }
-.div-container .p{
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 20px;
-    display: flex;
-}
-.div-container .h1{
-    font-size: 50px;
 
+#carouselExampleCaptions {
+    flex: 1; /* O carrossel ocupa o espaço restante */
+    max-width: 70%; /* Ajuste a largura máxima conforme necessário */
 }
-.div-container .p  .img:foto1{
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 10px;
-    width: 10px;
-    transition: all   0.3s;
 
+#carousel-legend-sidebar {
+    width: 30%; /* Largura da barra lateral da legenda */
+    /* Outros estilos para a barra lateral */
 }
-.div-container .p  .img:foto2{
-    height: 0px;
-    width: 10px;
-    transition: all   0.3s;
 
+.carousel-caption {
+    display: none; /* Ocultar legendas sobrepostas */
 }
