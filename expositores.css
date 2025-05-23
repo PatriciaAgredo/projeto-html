@@ -5,7 +5,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     
 }
 body{
@@ -71,4 +71,17 @@ body{
 }
 .h1{
     font-size: 40px;
+}
+.container {
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+.imagem {
+  width: 200px; /* Ajusta a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto {
+  padding-left: 20px; /* Espaço entre a imagem e o texto */
 }

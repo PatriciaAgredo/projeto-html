@@ -68,7 +68,51 @@ body{
     color: #ffbc0e;
     transform: scale(1.1);
 }
-.div .p{
-    text-align: justify;
-    justify-content: space-between;
+
+
+.sobre .box{
+    padding: 20px;
+    background-color: #5b5e5f;
+    color:#fff59d;
+    border-radius: 15px;
+    display: block;
+    text-align:center;
+}
+
+
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+
+.imagen img{
+    
+    width: 600px;
+    height:500px;
+    border-style:groove;
+    border-radius: 15px;
+    
+   
+    
+}
+
+
+.texto p{
+    margin-left: 80px;
+    font-style: italic;
+    color: #3b3c3d;
+    
+}
+footer{
+    position:static;
+  
+    background-color: #0f5a7a;
+    width: 100%;
+    
+    text-decoration-color: #fafad5;
+    font-family: "Nunito", sans-serif;
+    font-size: 10px;
+    
 }
