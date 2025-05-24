@@ -1,0 +1,660 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+     <link rel="stylesheet" href="{% static 'contato/galeria.css' %}">
+    
+   
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{% static 'contato/logo da corarte.png' %}" alt="logo da corarte">
+            
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                 <li><a href="{% url 'index' %}">Home</a></li>
+                 <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'eventos' %}">Eventos</a></li>
+                  <li><a href="{% url 'expositores' %}">Expositores</a></li>
+                 <li><a href="{% url 'galeria' %}">Galeria</a></li>
+            </ul>
+        </nav>
+<a href="{% url 'cadastrar_feirante' %}" class="btn"><button>Contacto</button>
+    <div class="instagram">
+            <a href="https://www.instagram.com/corartecordeiropolis/" target="_blank">
+             
+                <img src="{% static 'contato/instagram.png' %}" alt="instagram">
+            </a>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'contato/galeria.css' %}">
+<script src="{% static 'contato/script.js' %}"></script>
+       
+    </header>
+    <br><br><br>
+
+
+
+
+
+      
+    <div>
+        <h1>GALERIA</h1>
+    </div>
+    <div>
+
+
+
+<div class="container my-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+        <div class="col">
+            <div class="card h-100">
+                  <img src="{% static 'contato/gorroazulmarinho.jpg' %}" class="card-img-top" alt="Produto 1">
+                
+                <div class="card-body ">
+                    <h5 class="card-title text-truncate">Gorro Azul Marinho.</h5>
+                  
+                    <p class="card-text price-offer fw-bold fs-4">R$ 50,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega. </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                  <img src="{% static 'contato/gorropreto.jpg' %}" class="card-img-top" alt="Produto 2">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Gorro preto</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 50,00</p>
+                    <p class="card-text shipping-info text-success"> Peça única, pronta entrega.</p>
+                </div>
+               <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/gorrocinza.jpg' %}" class="card-img-top" alt="Produto 3">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">gorro cinza com preto</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 50,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista,br.
+                        (19) 99238-9971
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/panodecopabordadoa maquina.jpg' %}" class="card-img-top" alt="Produto 4">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Pano de copa bordado a máquina.<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+ <div class="col">
+            <div class="card h-100">
+            <img src="{% static 'contato/panodecopa2.jpg' %}" class="card-img-top" alt="Produto 5">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Pano de copa bordado a máquina.<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/panodecopa3.jpg' %}" class="card-img-top" alt="Produto 6">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Pano de copa bordado a máquina.<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/panodecopa4.jpg' %}" class="card-img-top" alt="Produto 7">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Pano de copa bordado a máquina.<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/toalhadelavavo.jpg' %}" class="card-img-top" alt="Produto 8">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Toalha de lavabo rosa bordada a máquina.<br> 
+            Tamanho 0,30 x 0,45 cm<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 35,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/toalhadelavabo2.jpg' %}" class="card-img-top" alt="Produto 9">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Toalha de lavabo rosa bordada a máquina.<br> 
+            Tamanho 0,30 x 0,45 cm<br>
+            Tamanho 0,50 x 0,78 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 35,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/capaparagalao.jpg' %}" class="card-img-top" alt="Produto 10">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Capa para galão de 10 litros<br> bordada a máquina.<br> 
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 45,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/aventaladultocinza.jpg' %}" class="card-img-top" alt="Produto 11">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Avental adulto cinza bordado<br> a máquina, com bolso central.<br> bordada a máquina.<br> 
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 60,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/aventaladultoxadrez.jpg' %}" class="card-img-top" alt="Produto 12">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Avental adulto xadrez azul, sem bordado, com bolso central.<br> a máquina, com bolso central.<br> bordada a máquina.<br> 
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/toalharosto1.jpg' %}" class="card-img-top" alt="Produto 13">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Toalha rosto verde bordada a máquina. 
+            Tamanho 0,50 x 0,80 cm
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 55,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100">
+                
+                <img src="{% static 'contato/toalharosto1.jpg' %}" class="card-img-top" alt="Produto 14">
+              
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Toalha rosto verde bordada a máquina. 
+            Tamanho 0,50 x 0,80 cm
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 55,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/babador1.jpg' %}" class="card-img-top" alt="Produto 15">
+              
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Babador infantil azul, sem bordado.
+            Tamanho 0,27 x 0,33 cm
+           
+                    </h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 55,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card h-100">
+                  <img src="{% static 'contato/fraldadeboca.jpg' %}" class="card-img-top" alt="Produto 16">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Fralda de boca, sem bordado.
+            Tamanho 0,35 x 0,35 cm.</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 25,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/fraldadeboca2.jpg' %}" class="card-img-top" alt="Produto 17">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Fralda de boca, sem bordado.
+            Tamanho 0,35 x 0,35 cm</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 25,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/fraldadepaseio.jpg' %}" class="card-img-top" alt="Produto 18">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Fralda de passeio, sem bordado.
+            Tamanho 0,73 x 0,73 cm.</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/fraldadepaseio2.jpg' %}" class="card-img-top" alt="Produto 19">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Fralda de passeio, sem bordado.
+            Tamanho 0,73 x 0,73 cm.</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Peça única, pronta entrega.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Doracil Evangelista<br>
+                    (19) 99238-9971</small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/neceserpascoa1.jpg' %}" class="card-img-top" alt="Produto 20">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Necessaire Páscoa 2025
+            Tamanho 20x16</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Até três dias para personalizar</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/neceser2.jpg' %}" class="card-img-top" alt="Produto 21">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Necessaire Páscoa 2025
+            Tamanho 20x16</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Até três dias para personalizar</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/neceser3.jpg' %}" class="card-img-top" alt="Produto 22">
+              
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Necessaire Páscoa 2025
+            Tamanho 20x16</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Até três dias para personalizar.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/neceser4.jpg' %}" class="card-img-top" alt="Produto 23">
+              
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Necessaire Páscoa 2025
+            Tamanho 20x16</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Até três dias para personalizar</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'contato/neceser5.jpg' %}" class="card-img-top" alt="Produto 24">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Necessaire Páscoa 2025
+            Tamanho 20x16</h5>
+                    <p class="card-text price-offer fw-bold fs-4">R$ 40,00</p>
+                    <p class="card-text shipping-info text-success">Até três dias para personalizar</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100">
+                  <img src="{% static 'contato/portabis1.jpg' %}" class="card-img-top" alt="Produto 25">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Porta bis</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor capa 15.00
+            Valor já com bis 22.00</p>
+                    <p class="card-text shipping-info text-success">Da para personalizar com nome envio em 3 dias úteis.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/kitpascoa.jpg' %}" class="card-img-top" alt="Produto 26">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Porta bis</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor capa 15.00
+            Valor já com bis 22.00</p>
+                    <p class="card-text shipping-info text-success">Da para personalizar com nome envio em 3 dias úteis.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                    <img src="{% static 'contato/kitsaquinhos1.jpg' %}" class="card-img-top" alt="Produto 27">
+             
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Porta bis</h5>
+                    <p class="card-text price-offer fw-bold fs-4">Valor do kit 55.00 </p>
+                    <p class="card-text shipping-info text-success">Kit pascoa presenteavel. 
+            Porta bis + necessaire 20x10 . Pode ser personalizado .</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/jogosouplast1.jpg' %}" class="card-img-top" alt="Produto 28">
+    
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Jogo de souplast</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor 260.00 completo 
+            Valor sem base mdf 230.00</p>
+                    <p class="card-text shipping-info text-success"> 6 lugares
+            6 capas
+            6 base mdf
+            6 guardanapo de linho.
+            6 porta guardanapo. 
+            Verificar as opções de estampa .
+            Feito sob encomenda 5 dias úteis para envio.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                     <img src="{% static 'contato/jogosouplast2.jpg' %}" class="card-img-top" alt="Produto 29">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Jogo de souplast</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor 260.00 completo 
+            Valor sem base mdf 230.00</p>
+                    <p class="card-text shipping-info text-success"> 6 lugares
+            6 capas
+            6 base mdf
+            6 guardanapo de linho.
+            6 porta guardanapo. 
+            Verificar as opções de estampa .
+            Feito sob encomenda 5 dias úteis para envio.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                 <img src="{% static 'contato/jogosouplast3.jpg' %}" class="card-img-top" alt="Produto 30">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Jogo de souplast</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor 260.00 completo 
+            Valor sem base mdf 230.00</p>
+                    <p class="card-text shipping-info text-success"> 6 lugares
+            6 capas
+            6 base mdf
+            6 guardanapo de linho.
+            6 porta guardanapo. 
+            Verificar as opções de estampa .
+            Feito sob encomenda 5 dias úteis para envio.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                      <img src="{% static 'contato/jogosouplast4.jpg' %}" class="card-img-top" alt="Produto 31">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">Jogo de souplast</h5>
+                    <p class="card-text price-offer fw-bold fs-4"> Valor 260.00 completo 
+            Valor sem base mdf 230.00</p>
+                    <p class="card-text shipping-info text-success"> 6 lugares
+            6 capas
+            6 base mdf
+            6 guardanapo de linho.
+            6 porta guardanapo. 
+            Verificar as opções de estampa .
+            Feito sob encomenda 5 dias úteis para envio.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Fernanda Edygio
+                        tel. (19)98189-8015<br>@ateliê Fê_Vera
+                    </small>
+                </div>
+            </div>
+        </div>
+ 
+
+
+
+
+      
+       
+
+
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

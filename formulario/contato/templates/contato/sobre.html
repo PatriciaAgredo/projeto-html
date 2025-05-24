@@ -1,0 +1,98 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="sobre.css">
+    <a href="index.html"></a>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+
+          <a href="index.html">
+                <img src="{% static 'contato/logo da corarte.png' %}" alt="logo da corarte">
+                </a>
+        </div>
+       
+
+        <nav>
+            <ul class="nav-links">
+                 <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'eventos' %}">Eventos</a></li>
+                <li><a href="{% url 'expositores' %}">Expositores</a></li>
+                <li><a href="{% url 'galeria' %}">Galeria</a></li>
+            </ul>
+        </nav>
+<a href="{% url 'cadastrar_feirante' %}" class="btn"><button>Contacto</button>
+<div class="instagram">
+            <a href="https://www.instagram.com/corartecordeiropolis/" target="_blank">
+             
+                <img src="{% static 'contato/instagram.png' %}" alt="instagram">
+            </a>
+
+<link rel="stylesheet" href="{% static 'contato/sobre.css' %}">
+<script src="{% static 'contato/script.js' %}"></script>
+       
+    </header>
+    <br><br><br>
+    <div class="sobre">
+        <div class="box">
+        <h1>SOBRE</h1>
+        </div>
+    </div>    
+        <br><br>
+
+
+
+    <div class="imagen">
+       
+        <img src="{% static 'contato/feira no atradecer.jpeg'%}">
+    </div>
+        <br><br>
+
+
+
+
+    <div class="texto">
+        <p>
+            Em meados de 2010, os artesãos da cidade de Cordeirópolis sentiram a necessidade de divulgar e comercializar seus trabalhos. Para tanto, procuraram a Secretaria de Cultura para auxiliar em exposições, feiras e dar andamento no desenvolvimento dos trabalhos dos artesãos da cidade, pois nesta época o artesanato começou a entrar em ascensão.
+Desta ação resultou um grupo de artesãos chamado Feirarte que passou a representar o artesanato local.<br><br>
+
+
+A Feirarte atuou em Cordeirópolis e região, de 2010 a 2020 através de exposições em feiras como a Feira Regional de Brotas, Limeira Artesanatos e Limeira Patchwork, além de feira na cidade natal em frente ao antigo Cordeiro Clube, EMEF “Cel. José Levy”, feira do Agricultor, feiras livres aos sábados de manhã.
+Em 2020 devido à pandemia pela Covid-19, as atividades tiveram que ser suspensas por tempo indeterminado.<br><br>
+
+Movidos pelo anseio de produzir e divulgar seus produtos, os artesãos da cidade de Cordeirópolis, em parceria com a Secretaria de Cultura da Prefeitura Municipal, se reuniram para a criação de uma Associação de Artesãos devido a necessidade de legalizar a profissão e promover subsídios para seus associados.
+Assim nasceu a CORARTE.<br><br> 
+Uma associação sem fins lucrativos, com a finalidade de apoiar e divulgar o trabalho dos artesãos da cidade e formar novos artesãos através de cursos e da divulgação da arte.
+
+        </p><br><br>
+
+    </div>
+    <footer>
+        <section>
+              <p>
+                <br>
+
+                Diretoria <br>
+                Presidente Fernanda Egydio<br> 
+                Vice presidente Araciane Aparecida Buratti Cardoso <br> 
+                1* secretaria Mariangeli Ferreira Ambrósio Olivatto <br> 
+                2* secretaria Beatriz Regina Xavier dias<br> 
+                1* tesoureira Fabíola Cristina Maia <br> 
+                2* tesoureira Daniele Caroline caneo de Pádua<br> 
+    
+
+             <p>
+             
+         </section>
+    </footer>
+    
+
+</body>
+</html>

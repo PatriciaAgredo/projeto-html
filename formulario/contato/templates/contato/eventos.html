@@ -1,0 +1,103 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expositores</title> 
+    
+   
+    <link rel="stylesheet" href="{% static 'contato/eventos.css' %}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           
+            <a href="{% url 'index' %}"><img src="{% static 'contato/logo da corarte.png' %}" alt="logo da corarte"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+               
+                <li><a href="{% url 'index' %}" >Home</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'eventos' %}" >Eventos</a></li> 
+                <li><a href="{% url 'expositores' %}" >Expositores</a></li>
+                <li><a href="{% url 'galeria' %}" >Galeria</a></li>
+            </ul>
+        </nav>
+       
+        <a href="{% url 'cadastrar_feirante' %}" class="btn"><button>Contacto</button></a>
+    </header>
+    <br><br>
+
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button> 
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-caption="Feira Conciência Negra: A CorArte tem feito varios eventos ao longo de sua criação:">
+                
+                    <img src="{% static 'contato/foto1deeventos.png' %}" alt="foto1" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira de Natal: Esta feira foi feita na praça central da cidade de Cordeirópolis no dia 20 de Dezembro de 2021">
+                    <img src="{% static 'contato/feiradenatal.png' %}" alt="feira de natal" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira na Cámara municipal de Cordeirópolis: A CorArte fez uma feira na Cámara municipal da cidade">
+                    <img src="{% static 'contato/feiradacamara.png' %}" alt="feira da camara municipal" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira na Praça central da cidade de Cordeirópolis 2022: No 2022 teve a feira na praça central da cidade">
+                    <img src="{% static 'contato/feiranapraca22.png' %}" alt="feira na praça central de Cordeirópolis" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira Fusteria 2022: Esta feira foi feita na cidade de Rio Claro o 9 de Abril de 2022">
+                    <img src="{% static 'contato/feirafusteira.png' %}" alt="feira fusteira 2022" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira Praça das Artes: Esta feira foi feita o 24 de Abril de 2022">
+                    <img src="{% static 'contato/feira pra.png' %}" alt="feira praça das artes" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira na 108ª Festa da Padroeira de Cascalho: Esta feira foi em Cascalho na Cidade de Cordeirópolis o 21 de Agosto de 2022">
+                    <img src="{% static 'contato/feiracascalho.png' %}" alt="feira da festa da padroeira de Cascalho" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-caption="Feira Dia das Mães no Empório Cascalho: Confecção de mantas para doação para Rio Grande do Sul realizada no 11 de Maio de 2024">
+                    <img src="{% static 'contato/feiradiadasmaes.png' %}" class="d-block w-100" alt="dia das maes">
+                </div>
+                <div class="carousel-item" data-caption="Viagem Embu das Artes: 26 de Maio de 2024">
+                    <img src="{% static 'contato/feira deembu1.png' %}" class="d-block w-100" alt="feira de viagen">
+                </div>
+                <div class="carousel-item" data-caption="Festa 3 anos Corarte l: Esta festa foi realizada o 07 de Setembro de 2024 na praça central de Cordeirópolis">
+                    <img src="{% static 'contato/feira de tres anos.png' %}" class="d-block w-100" alt="feira de aniversario">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carousel-legend-area" class="mt-3 p-2 border">
+            <p id="current-caption"></p>
+        </div>
+    </div>
+    
+   
+    <script src="{% static 'contato/eventos.js' %}"></script> 
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

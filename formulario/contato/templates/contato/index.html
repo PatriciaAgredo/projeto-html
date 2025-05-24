@@ -1,0 +1,154 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da CORARTE</title>
+   
+    <link rel="stylesheet" href="{% static 'contato/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="{% static 'contato/script.js' %}"></script>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            
+            <img src="{% static 'contato/logo da corarte.png' %}" alt="logo da corarte">
+        </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="{% url 'index' %}" >Home</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'eventos' %}">Eventos</a></li>
+                <li><a href="{% url 'expositores' %}" >Expositores</a></li>
+                <li><a href="{% url 'galeria' %}"  >Galeria</a></li>
+            </ul>
+        </nav>
+ 
+        <a href="{% url 'cadastrar_feirante' %}" class="btn"><button>Contacto</button></a> 
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/corartecordeiropolis/" target="_blank">
+             
+                <img src="{% static 'contato/instagram.png' %}" alt="instagram">
+            </a>
+        </div>
+        
+    </header>
+
+    
+    <div style="position: relative; width: 100%; height: 0; padding-top: 33.3333%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGmarmM8n4/WSYNgRCa2ZHzDdDCxvBe9w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+    </div>
+
+
+    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGmarmM8n4&#x2F;WSYNgRCa2ZHzDdDCxvBe9w&#x2F;view?utm_content=DAGmarmM8n4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+    <br><br><br><br>
+
+
+    <div class="container swiper">
+        <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+
+            <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                  
+                    <img src="{% static 'contato/foto da feira.png' %}" class="card-image" alt="foto da feira">
+                    <h1 class="badge sobre">Sobre</h1>
+                    <p class="card-title">
+                        a CorArte é uma <br>associação de artesãos da cidade de Cordeirópolis.
+                    </p><br><br>
+                    <button class="card-button" >> </button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                    
+                    <img src="{% static 'contato/foto2 de eventos.png' %}" class="card-image" alt="...">
+                    <h1 class="badge eventos">Eventos</h1>
+                    <p class="card-title">
+                        A CorArte sempre está fazendo feiras, as mais importantes
+                        são em setembro, porque a associação tem aniversario em agosto.
+                    </p>
+                    <button class="card-button" ></button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                   
+                    <img src="{% static 'contato/feiradenatal.png' %}" class="card-image" alt="...">
+                    <h1 class="badge expositores">Expositores</h1>
+                    <p class="card-title">
+                        Os associados são os artesãos da cidade de Cordeirópolis, ou seja pessoas que moram na cidade.
+                    </p><br>
+                    <button class="card-button" > </button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                   
+                    <img src="{% static 'contato/feirafusteira.png' %}" class="card-image" alt="...">
+                    <h1 class="badge galeria">Galeria</h1>
+                    <p class="card-title">
+                        Os artesãos tem uma grande variedade de artigos a venda, como cerámicas, bordados, entre outros.
+                    </p><br>
+                    <button class="card-button" ></button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="" class="card-link">
+                    
+                    <img src="{% static 'contato/feiradacamara.png' %}" class="card-image" alt="...">
+                    <h1 class="badge contato">Contato</h1>
+                    <p class="card-title">
+                        Se você quer participar é só entrar em <br>contato com os coordinadores da CorArte.
+                    </p><br>
+                    <button class="card-button" > </button>
+                </a>
+            </li>
+
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+
+        
+        
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+    <script src="{% static 'contato/script.js' %}"></script>
+    
+    <footer>
+        <section>
+                <p>
+                    <br>
+                    Diretoria <br>
+                    Presidente Fernanda Egydio<br> 
+                    Vice presidente Araciane Aparecida Buratti Cardoso <br> 
+                    1* secretaria Mariangeli Ferreira Ambrósio Olivatto <br> 
+                    2* secretaria Beatriz Regina Xavier dias<br> 
+                    1* tesoureira Fabíola Cristina Maia <br> 
+                    2* tesoureira Daniele Caroline caneo de Pádua<br> 
+                <p>
+        </section>
+    </footer>
+</body>
+</html>
